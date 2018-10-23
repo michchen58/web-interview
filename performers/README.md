@@ -12,14 +12,13 @@
 
 ### API to work with
 - API request: `GET https://mobile-staging.gametime.co/v1/performers` without any params.
-- API response: a portion of the response is depicted below. We only care about the following properties in each
-  performer pbject. {`id`, `name`, `hero_image_url`, `category_group`}
+- API response: a portion of the response is depicted below. We only care about the following properties in each performer object. {`id`, `name`, `hero_image_url`, `category_group`}
   where,
   - `id`: is a unique performer id
   - `name`: is the name of the performer
   - `hero_image_url`: is the hero image link of the performer
   - `category_group`: is one of ['sport', 'concert', 'theater'] - NOTE: you only need this for the bonus task.
-- Sample API response: 
+- Sample API response:
 ```
 {
     "performers": [
@@ -96,10 +95,10 @@
       - 1.b: Fill out the `reducers/performers.js` reducer to populate the store with the returned array of performers
     - If using pure React:
       - 1. Fetch the list of performers in `componentDidMount()` method of your top component.
-    - 2. Create a `components/Performer.js`
-    - 3. Create a `components/PerformerList.js` to render and array of `components/Performer.js`.
+      - 2. Create a `components/Performer.js`
+      - 3. Create a `components/PerformerList.js` to render and array of `components/Performer.js`.
 
-##### Bonus Task (noone has ever completed this task)
+##### Bonus Task (no one has ever completed this task)
 - If you are REALLY REALLY fast, go ahead and do as much of this task as you can.
   - Create a drop-down filter on top of the page with the following options ['all', 'sport', 'music', 'theater']
   - Initially `all` should be selected and all performers should be rendered.
