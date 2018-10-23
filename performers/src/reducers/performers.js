@@ -3,10 +3,14 @@ export const initialState = {
 }
 
 const performerReducer = (state = initialState, action) => {
-    switch (action.type) {
-        default:
-            return state
-    }
+  switch (action.type) {
+    case 'FETCH_PERFORMERS':
+      return Object.assign({}, state, {
+        performers: action.payload
+      });
+    default:
+      return state
+  }
 }
 
 export default performerReducer

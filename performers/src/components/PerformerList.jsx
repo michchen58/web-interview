@@ -1,4 +1,5 @@
 import Performer from './Performer.jsx';
+import {connect} fom 'react-redux';
 const React = require('react');
 
 const PerformerList = props => {
@@ -14,5 +15,10 @@ const PerformerList = props => {
   );
 }
 
+const mapStateToProps = (state) => {
+  return {
+    performerData: state.performers
+  };
+};
 
-export default PerformerList;
+export default connect(state, null)(PerformerList);
