@@ -19,7 +19,7 @@ class App extends React.Component {
       .then((response) => {
         // console.log(response.data.performers[0]);
         this.setState({
-          performers: response.data.performers.slice(0,10)
+          performers: response.data.performers.slice(0,99)
         });
       })
       .catch(function (error) {
